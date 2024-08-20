@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경주 여행 안내</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>경주 여행 안내</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#accommodations">숙소</a></li>
+            <li><a href="#restaurants">맛집</a></li>
+            <li><a href="#attractions">구경할 만한 장소</a></li>
+            <li><a href="#guestbook">방명록</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="accommodations">
+            <h2>경주의 숙소</h2>
+            <ul>
+                <li>호텔 현암</li>
+                <li>경주한옥스테이</li>
+                <li>베니키아 스위스 로젠 호텔</li>
+            </ul>
+        </section>
+
+        <section id="restaurants">
+            <h2>경주의 맛집</h2>
+            <ul>
+                <li>교동 최씨삼계탕</li>
+                <li>황리단길 빵집</li>
+                <li>경주한우마을</li>
+            </ul>
+        </section>
+
+        <section id="attractions">
+            <h2>경주의 구경할 만한 장소</h2>
+            <ul>
+                <li>불국사</li>
+                <li>석굴암</li>
+                <li>첨성대</li>
+            </ul>
+        </section>
+
+        <section id="guestbook">
+            <h2>방명록</h2>
+            <form id="guestbookForm">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">메시지:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">남기기</button>
+            </form>
+
+            <div id="guestbookEntries">
+                <h3>방명록 기록</h3>
+                <ul id="entriesList">
+                    <!-- 방명록 항목들이 여기에 추가됩니다 -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
